@@ -1,0 +1,12 @@
+class Solution {
+public:
+    int peakIndexInMountainArray(vector<int>& ar) {
+        int ans;
+        for(int i = 1; i<ar.size()-1; ++i){
+            if(ar[i-1]<ar[i] and ar[i]>ar[i+1]){
+                ans = i;
+            }
+        }
+        return ans;
+    }
+};
