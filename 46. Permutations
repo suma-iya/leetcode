@@ -1,0 +1,15 @@
+class Solution {
+public:
+    vector<vector<int>> permute(vector<int>& nums) {
+        vector<int>ar(nums.size());
+        ar = nums;
+        next_permutation(ar.begin(), ar.end());
+        vector<vector<int>>res;
+        res.push_back(ar);
+        while(ar!=nums){
+            next_permutation(ar.begin(), ar.end());
+            res.push_back(ar);
+        }
+        return res;
+    }
+};
