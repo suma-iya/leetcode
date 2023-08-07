@@ -1,0 +1,21 @@
+class Solution {
+public:
+    bool dfs(string s, unordered_set<string>&word, unordered_map<string,bool>&memo){
+        if(memo.find(s)!=memo.end()) return memo[s];
+        if(word.find(s)!=word.end()) return true;
+        for(int i = 1; i<s.size(); i++){
+            string prefix = s.substr(0, i);
+            if(word.find(prefix)!=word.end() and dfs(s.substr(i), word, memo)){
+                memo[s] = true;
+                return true;
+            }
+        }
+        memo[s] = false;
+        return false;
+    }
+    bool wordBreak(string s, vector<string>& wordDict) {
+        unordered_map<string,bool> memo;
+        unordered_set<string> word(wordDict.begin(), wordDict.end());
+        return dfs(s, word, memo);
+    }
+};
