@@ -1,0 +1,26 @@
+class MyStack {
+public:
+    int ar[100];
+    int t = -1;
+    MyStack() {
+    }
+    
+    void push(int x) {
+        ar[++t] = x;
+    }
+    
+    int pop() {
+        int a = ar[t];
+        --t;
+        return a;
+    }
+    
+    int top() {
+        return ar[t];
+    }
+    
+    bool empty() {
+        if(t==-1) return true;
+        return false;
+    }
+};
