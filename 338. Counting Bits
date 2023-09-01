@@ -1,0 +1,12 @@
+ vector<int> countBits(int n) {
+        vector<int>v;
+        for(int i = 0; i<=n; ++i){
+            int a = i, cnt = 0;
+            while(a>0){
+                cnt += a%2;
+                a = a/2;
+            }
+            v.push_back(cnt);
+        }
+        return v;
+    }
