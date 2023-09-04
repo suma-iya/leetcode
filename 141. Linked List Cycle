@@ -1,0 +1,9 @@
+bool hasCycle(ListNode *head) {
+        ListNode *x = head, *y = head;
+        while(x!=nullptr and x->next!=nullptr){
+            y = y->next;
+            x = x->next->next;
+            if(x==y) return true;
+        }
+        return false;
+}
