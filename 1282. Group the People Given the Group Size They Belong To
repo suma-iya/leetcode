@@ -1,0 +1,14 @@
+class Solution {
+public:
+vector<vector> groupThePeople(vector& groupSizes) {
+vector<vector>ans;
+map<int, vector>m;
+for(int i = 0; i<groupSizes.size(); ++i){
+m[groupSizes[i]].push_back(i);
+if(m[groupSizes[i]].size()==groupSizes[i]){
+ans.push_back(m[groupSizes[i]]);
+m[groupSizes[i]]={};
+}
+}
+return ans;
+}
