@@ -1,0 +1,12 @@
+class Solution {
+public:
+    int mem[1001][1001];
+    int longestCommonSubsequence(string text1, string text2) {
+        for(int i = 0; i<text1.size(); ++i){
+            for(int j = 0; j<text2.size(); ++j){
+                mem[i+1][j+1] = text1[i]==text2[j]? mem[i][j]+1 : max(mem[i+1][j], mem[i][j+1]);
+            }
+        }
+        return mem[text1.size()][text2.size()];
+    }
+};
