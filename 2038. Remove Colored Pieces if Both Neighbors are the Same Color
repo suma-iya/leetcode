@@ -1,0 +1,14 @@
+class Solution {
+public:
+    bool winnerOfGame(string colors) {
+        int cnta=0, cntb=0;
+        for(int i = 2; i<colors.size(); ++i){
+            if(colors[i]==colors[i-1] and colors[i-1]==colors[i-2]){
+                if(colors[i]=='A') cnta++;
+                else cntb++;
+            }
+        }
+        if(cnta>cntb and cnta!=0) return true;
+        else return false;
+    }
+};
