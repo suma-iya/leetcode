@@ -1,0 +1,31 @@
+Problem statement: There are gonna be integers from 1 to n.  You need to use push and pop stack operation to enter them in an array   and print the operation.
+
+
+
+Intuition: Once you understand the problem. It's quite easy to solve.  Finding the integers in target array. For the integers to  enter in the array we need push operation. If the number (from 1 to n) doesn't exist then it was definitely pushed at first and then popped.
+
+
+
+Solution : You just need to keep track of the integers that you are getting from target array. I used map to track. The integers that are present in target array just have one operation to print "Push" , otherwise both "Push" and "Pop".
+```
+class Solution {
+public:
+    vector<string> buildArray(vector<int>& target, int n) {
+        vector<string>ans;
+        map<int,int>m;
+        int a ;
+        for(int i = 0; i<target.size(); ++i){
+            m[target[i]]=1;
+            a = target[i];
+        }
+        for(int i = 1; i<=a; ++i){
+            if(m[i]==m.empty()){
+                ans.push_back("Push");
+                ans.push_back("Pop");
+            }else{
+                ans.push_back("Push");
+            }
+        }
+        return ans;
+    }
+};
