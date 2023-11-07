@@ -1,0 +1,30 @@
+/*As the reserve function needed to return the value of seat, I kept a track on it using global variable i and for each unreserve function inserted it's value in a set. 
+When there was a unreserve function pass, the set was not empty. 
+So I checked if the set empty or not. 
+If it was not empty, I did remove it from the set and returned it's value or I returned the value of i.
+*/
+```class SeatManager {
+public:
+    set<int>s;
+    int i = 1;
+    SeatManager(int n) {
+        
+    }
+    
+    int reserve() {
+       if(!s.empty()){
+           auto it = s.begin();
+           int a = (*it);
+           s.erase(s.begin());
+           return (a);
+       }else{
+           i++;
+           return i-1;
+       }
+    }
+    
+    void unreserve(int seatNumber) {
+        s.insert(seatNumber);
+        
+    }
+};
