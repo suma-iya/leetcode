@@ -1,0 +1,10 @@
+class Solution {
+public:
+    bool arrayStringsAreEqual(vector<string>& word1, vector<string>& word2) {
+        string word = "", ans = "";
+        for(int i = 0; i<word1.size(); ++i) word+=word1[i];
+        for(int i = 0; i<word2.size(); ++i) ans+=word2[i];
+        if(word==ans) return true;
+        else return false;
+    }
+};
