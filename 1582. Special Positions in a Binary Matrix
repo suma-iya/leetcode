@@ -1,0 +1,49 @@
+class Solution {
+public:
+    int numSpecial(vector<vector<int>>& mat) {
+        int cnt = 0;
+        int n = mat[0].size();
+        for(int i = 0; i<mat.size(); ++i){
+            for(int j = 0; j<mat[0].size(); ++j){
+                if(mat[i][j]==1){
+                    int p = i+1, q = i-1;
+                    int r = j+1, s = j-1;
+                    bool ok = true;
+                    while(p<mat.size()){
+                        if(mat[p][j]==1){
+                            ok = false;
+                            break;
+                        }
+                        p++;
+                    }
+                    while(q>-1){
+                        if(mat[q][j]==1){
+                            ok = false;
+                            break;
+                        }
+                        q--;
+                    }
+                     while(r<n){
+                        if(mat[i][r]==1){
+                            ok = false;
+                            break;
+                        }
+                        r++;
+                    }
+                     while(s>-1){
+                        if(mat[i][s]==1){
+                            ok = false;
+                            break;
+                        }
+                        s--;
+                    }
+                
+                if(ok){
+                    cnt++;
+                }
+                }
+            }
+        }
+        return cnt;
+    }
+};
