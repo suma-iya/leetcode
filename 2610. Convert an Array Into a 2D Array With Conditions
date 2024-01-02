@@ -1,0 +1,21 @@
+class Solution {
+public:
+    vector<vector<int>> findMatrix(vector<int>& nums) {
+        map<int,int>m;
+        int mx = 0;
+        for(int i = 0; i<nums.size(); ++i){
+            m[nums[i]]++;
+            mx = max(mx,m[nums[i]]);
+        }
+        vector<vector<int>>ans;
+        for(int i = 0; i<mx; ++i){
+            vector<int>v;
+            for(auto it: m){
+                if(it.second>0) v.push_back(it.first);
+                m[it.first]--;
+            }
+            ans.push_back(v);
+        }
+        return ans;
+    }
+};
