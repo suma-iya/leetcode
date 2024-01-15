@@ -1,0 +1,19 @@
+   vector<vector<int>> findWinners(vector<vector<int>>& matches) {
+        map<int,int>m;
+        set<int>s, s1;
+        vector<vector<int>>ans;
+        vector<int>ans1;
+        vector<int>ans2;
+        for(int i = 0; i<matches.size(); ++i){
+            s.insert(matches[i][0]);
+            s.insert(matches[i][1]);
+            m[matches[i][1]]++;
+        }
+        for(auto x: s){
+            if(m[x]==m.empty()) ans1.push_back(x);
+            if(m[x]==1) ans2.push_back(x);
+        }
+        ans.push_back(ans1);
+        ans.push_back(ans2);
+        return ans;
+    }
