@@ -1,0 +1,21 @@
+class Solution {
+public:
+    int N = 1e9+7;
+    int solve(int m, int n, int maxMove, int r, int c, vector<vector<vector<int>>>&dp, int move){
+        if(r<0 || r>=m || c<0 || c>=n) return 1;
+        if(move == maxMove) return 0;
+        if(dp[move][r][c]!=-1) return dp[move][r][c]%N;
+        int ans = 0;
+        ans = (ans+solve(m, n, maxMove, r+1, c, dp, move+1))%N;
+        ans = (ans+ solve(m, n, maxMove, r-1, c, dp, move+1))%N;
+        ans = (ans + solve(m, n, maxMove, r, c+1, dp, move+1))%N;
+        ans = (ans + solve(m, n, maxMove, r, c-1, dp, move+1))%N;
+        dp[move][r][c] = ans;
+        return dp[move][r][c]%N;
+    }
+    int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {
+        vector<vector<vector<int>>>dp(maxMove+1, vector<vector<int>>(m+1, vector<int>(n+1,-1)));
+        return solve(m, n, maxMove, startRow, startColumn , dp, 0);
+        
+    }
+};
