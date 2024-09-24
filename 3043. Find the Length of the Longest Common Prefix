@@ -1,0 +1,33 @@
+class Solution {
+public:
+    int digit(int x){
+        int cnt = 0;
+        while(x>0){
+            x/=10;
+            cnt++;
+        }
+        return cnt; // retruns the number of digits
+    }
+    int longestCommonPrefix(vector<int>& arr1, vector<int>& arr2) {
+        unordered_set<int>s; // unordered set to keep track of prefixes
+        int mx = 0;
+        // to track first vector's prefexes
+        for(auto it: arr1){
+            while(it>0){
+                s.insert(it);
+                it/=10;
+            }
+        }
+        // now using this track we need to check if it matches the 2nd vector's numbers
+        for(auto it: arr2){
+            while(it>0){
+                if(s.find(it)!=s.end()){
+                    mx = max(digit(it),mx); // digit function to count how many digits;
+                    break;
+                }
+                it/=10;
+            }
+        }
+        return mx;
+    }
+};
