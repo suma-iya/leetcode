@@ -1,0 +1,23 @@
+bool parseBoolExpr(string expression) {
+        stack<char>st;
+        for(auto it : expression){
+            if(it==',' || it == '('){
+                continue;
+            }else if(it=='!' || it=='&' || it=='|' || it=='t' || it=='f'){
+                st.push(it);
+            }else if(it==')'){
+                bool hastrue = false, hasfalse = false;
+                while(st.top()!='!' and st.top()!='|' and st.top()!='&'){
+                    char ch = st.top();
+                    st.pop();
+                    if(ch=='t') hastrue = true;
+                    if(ch=='f') hasfalse = true;
+                }
+                char ch = st.top(); st.pop();
+                if(ch=='!') st.push(hastrue? 'f' : 't');
+                else if(ch=='|') st.push(hastrue?'t' : 'f');
+                else if(ch=='&') st.push(hasfalse? 'f' : 't'); 
+            }
+        }
+        return st.top()=='t';
+    }
