@@ -1,0 +1,36 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    unordered_map<int,long long>m;
+    long long kthLargestLevelSum(TreeNode* root, int k) {
+        queue<pair<int, TreeNode*>>q;
+        q.push({0, root});
+        while(!q.empty()){
+            auto p = q.front();
+            q.pop();
+            int a = p.first;
+            TreeNode *r = p.second;
+            m[a]= m[a] + (long long)r->val ;
+            if(r->left!=nullptr) q.push({a+1, r->left});
+            if(r->right!=nullptr) q.push({a+1, r->right});
+        }
+        int n = m.size();
+        vector<long long>v(n);
+        for(auto it:m){
+            v[it.first] = it.second;
+        }
+        sort(v.begin(), v.end(), greater<long long>());
+        if(k<=n) return v[--k];
+        else return -1;
+    }
+};
