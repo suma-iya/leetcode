@@ -6,7 +6,7 @@ Welcome to the LeetCode Solutions repository! Here, you'll find daily solutions 
 
 | Problem Number | Problem Name                   | Jump into Code                                  | Explanation                                    | Difficulty Level |
 |----------------|--------------------------------|--------------------------------------------------|------------------------------------------------|------------------|
-| 1957       |Delete Characters to Make Fancy String | https://github.com/suma-iya/leetcode/commit/6be471ab03c05ee730f9b8e8ab2f3dee9b4516a6#diff-6ba8d661c2026cd73203358c5328aa6ac7f8da07d8b27a3848826bf25c0a2533R7 | | Easy             |
+| 1957       |Delete Characters to Make Fancy String | https://leetcode.com/submissions/detail/1439698548/ | | Easy             |
 
 ## Contributors
 
