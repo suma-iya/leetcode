@@ -6,7 +6,12 @@ Welcome to the LeetCode Solutions repository! Here, you'll find daily solutions 
 
 | Problem Number | Problem Name                   | Jump into Code                                  | Explanation                                    | Difficulty Level |
 |----------------|--------------------------------|--------------------------------------------------|------------------------------------------------|------------------|
-| 1957       |Delete Characters to Make Fancy String | https://leetcode.com/submissions/detail/1439698548/ | | Easy             |
+| 1957       |Delete Characters to Make Fancy String | https://leetcode.com/submissions/detail/1439698548/ | | Easy             | 
+|----------------|--------------------------------|--------------------------------------------------|------------------------------------------------|------------------|
+|   2914             |Minimum Number of Changes to Make Binary String Beautiful| 2914. Minimum Number of Changes to Make Binary String Beautiful.cpp | |   Medium         |
+|----------------|--------------------------------|--------------------------------------------------|------------------------------------------------|------------------|
+
+
 
 ## Contributors
 
