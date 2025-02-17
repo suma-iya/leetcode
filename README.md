@@ -7,7 +7,9 @@ Welcome to the LeetCode Solutions repository! Here, you'll find daily solutions 
 | Problem Number | Problem Name                   | Jump into Code                                  | Explanation                                    | Difficulty Level |
 |----------------|--------------------------------|--------------------------------------------------|------------------------------------------------|------------------|
 | 1957       |Delete Characters to Make Fancy String | https://leetcode.com/submissions/detail/1439698548/ | | Easy             | 
-|   2914             |Minimum Number of Changes to Make Binary String Beautiful|https://github.com/suma-iya/leetcode/blob/main/2914.%20Minimum%20Number%20of%20Changes%20to%20Make%20Binary%20String%20Beautiful.cpp | |   Medium         |
+| 2914             |Minimum Number of Changes to Make Binary String Beautiful|https://github.com/suma-iya/leetcode/blob/main/2914.%20Minimum%20Number%20of%20Changes%20to%20Make%20Binary%20String%20Beautiful.cpp | |   Medium         |
+| 88            |Merge Sorted Array|https://github.com/suma-iya/leetcode/blob/main/88.%20Merge%20Sorted%20Array| |   Easy       |
+
 
 
 
