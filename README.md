@@ -10,6 +10,7 @@ Welcome to the LeetCode Solutions repository! Here, you'll find daily solutions 
 | 2914             |Minimum Number of Changes to Make Binary String Beautiful|https://github.com/suma-iya/leetcode/blob/main/2914.%20Minimum%20Number%20of%20Changes%20to%20Make%20Binary%20String%20Beautiful.cpp |  Medium         |
 | 88            |Merge Sorted Array|https://github.com/suma-iya/leetcode/blob/main/88.%20Merge%20Sorted%20Array|  Easy       |
 | 26            |Remove Duplicates from Sorted Array| https://github.com/suma-iya/leetcode/blob/main/Code%20Testcase%20Test%20Result%20Test%20Result%2026.%20Remove%20Duplicates%20from%20Sorted%20Array |   Easy       |
+| 27            |Remove Element| https://github.com/suma-iya/leetcode/blob/main/Remove%20Element |   Easy       |
 
 
 
