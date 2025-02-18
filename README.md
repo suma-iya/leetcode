@@ -11,6 +11,7 @@ Welcome to the LeetCode Solutions repository! Here, you'll find daily solutions 
 | 88            |Merge Sorted Array|https://github.com/suma-iya/leetcode/blob/main/88.%20Merge%20Sorted%20Array|  Easy       |
 | 26            |Remove Duplicates from Sorted Array| https://github.com/suma-iya/leetcode/blob/main/Code%20Testcase%20Test%20Result%20Test%20Result%2026.%20Remove%20Duplicates%20from%20Sorted%20Array |   Easy       |
 | 27            |Remove Element| https://github.com/suma-iya/leetcode/blob/main/Remove%20Element |   Easy       |
+| 80           |Remove Duplicates from Sorted Array II|https://github.com/suma-iya/leetcode/blob/main/80.%20Remove%20Duplicates%20from%20Sorted%20Array%20II |   Medium       |
 
 
 
