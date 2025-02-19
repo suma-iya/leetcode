@@ -14,6 +14,7 @@ Welcome to the LeetCode Solutions repository! Here, you'll find daily solutions 
 | 80             | Remove Duplicates from Sorted Array II                 | [C++](https://github.com/suma-iya/leetcode/blob/main/80.%20Remove%20Duplicates%20from%20Sorted%20Array%20II) | Medium           |
 | 169             | Majority Element| [C++](https://github.com/suma-iya/leetcode/blob/main/Remove%20Element) | Easy             |
 | 189             |Rotate Array| [C++](https://github.com/suma-iya/leetcode/blob/main/189.%20Rotate%20Array) | Medium             |
+| 121             |Best Time to Buy and Sell Stock| [C++](https://github.com/suma-iya/leetcode/blob/main/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock) | Easy             |
 
 
 ## Contributors
