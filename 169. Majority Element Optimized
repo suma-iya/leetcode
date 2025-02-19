@@ -1,0 +1,13 @@
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+       int cnt = 0, val = -1;
+       for(auto x: nums){
+            if(cnt==0){
+                val = x;
+            }
+            cnt += x==val? 1:-1;
+       }
+       return val;
+    }
+};
