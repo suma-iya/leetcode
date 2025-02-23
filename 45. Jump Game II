@@ -1,0 +1,16 @@
+class Solution {
+public:
+    
+    int jump(vector<int>& nums) {
+        int mxreachable = 0, lastreach = 0, i = 0, jump = 0;
+        while(lastreach<nums.size()-1){
+            mxreachable = max(mxreachable, i+nums[i]);
+            if(i==lastreach){
+                lastreach = mxreachable;
+                jump++;
+            }
+            i++;
+        }
+        return jump;
+    }
+};
