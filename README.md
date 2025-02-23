@@ -19,6 +19,7 @@ Welcome to the LeetCode Solutions repository! Here, you'll find daily solutions 
 | 122            |Best Time to Buy and Sell Stock II| [C++](https://github.com/suma-iya/leetcode/blob/main/122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II) | Medium             |
 | 55            |Jump Game| [C++](https://github.com/suma-iya/leetcode/blob/main/55.%20Jump%20Game) | Medium             |
 | 36         |Valid Sudoku| [C++](https://github.com/suma-iya/leetcode/blob/main/36.%20Valid%20Sudoku) | Medium             |
+| 45         |Jump Game II| [C++](https://github.com/suma-iya/leetcode/blob/main/45.%20Jump%20Game%20II) | Medium             |
 
 
 
